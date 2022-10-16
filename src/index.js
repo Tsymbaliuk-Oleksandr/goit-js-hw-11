@@ -7,7 +7,6 @@ import './css/styles.css'
 
 
 const getImages = new ApiImages();
-console.log(getImages.per_page);
 
 let sumPage = 0; 
 
