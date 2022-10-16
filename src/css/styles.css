@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+  padding-bottom: 50px;
+}
+
+#search-box {
+  font: inherit;
+  padding: 8px;
+  max-width: 320px;
+  margin-bottom: 16px;
+} 
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  background-color: blueviolet;
+  box-shadow: 0px 10px 8px -5px rgba(112, 125, 127, 0.8);
+}
+
+header>form {
+  margin: 10px auto;
+  height: 30px;
+  width: 100%;
+}
+
+.input-field {
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  line-height: 1.5;
+  padding: 1px 5px;
+}
+
+.btn {
+  height: 30px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 1px 5px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin-top: 92px;
+  margin-bottom: 24px;
+  padding: 0 42px;
+}
+
+.photo-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  flex-basis: calc(100% / 4 - 20px);
+  margin-right: 24px;
+  margin-bottom: 24px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.photo-card:nth-child(4n + 4) {
+  margin-right: 0;
+}
+
+.photo-card img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo-card .info {
+  display: flex;
+}
+
+.info-item {
+  padding: 8px 0;
+  font-size: 1vw;
+  text-align: center;
+}
+
+.scroll {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  background-color:#8a2be2;
+  ;
+  color: #fafafa;
+}
